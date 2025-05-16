@@ -2,7 +2,11 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getDatabase } from 'firebase/database';
 
+
 const firebaseConfig = {
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY ?? (() => {
+    throw new Error("VITE_FIREBASE_API_KEY is not defined");
+  })(),
   authDomain: "crm-system-7149a.firebaseapp.com",
   projectId: "crm-system-7149a",
   storageBucket: "crm-system-7149a.firebasestorage.app",
