@@ -1,1 +1,45 @@
-// app global css in SCSS form
+// src/css/app.scss
+
+// 1) Базовые стили Quasar
+@import 'quasar/dist/quasar.sass';
+
+// 2) Кастомные глобальные правила
+body {
+  background: var(--q-light);
+  color:      var(--q-dark);
+  font-family: var(--q-font-family);
+}
+
+a {
+  color: var(--q-primary);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.shadow-card {
+  box-shadow:    0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+// Только для dark mode, иначе не мешает светлой теме
+.theme--dark {
+  // Контейнер поля (outline-контрол)
+  .rows-per-page .q-field__control {
+    background-color: var(--q-grey-2) !important;
+  }
+  // Цвет текста внутри
+  .rows-per-page .q-field__control .q-field__native {
+    color: var(--q-grey-9) !important;
+  }
+  .q-field__label {
+      color: var(--q-grey-9) !important;
+      background-color: var(--q-grey-2);
+      padding: 0 4px;
+      border-radius: 2px;
+  }
+  // Сам дропдаун
+  .rows-per-page .q-select__dropdown-content {
+    background-color: var(--q-grey-1) !important;
+  }
+}
