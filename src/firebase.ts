@@ -3,7 +3,6 @@ import { getAuth } from 'firebase/auth';
 import { getDatabase } from 'firebase/database';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCtwBywTDMQxd7dxT1IgfdtsxLHXxGM7TI",
   authDomain: "crm-system-7149a.firebaseapp.com",
   projectId: "crm-system-7149a",
   storageBucket: "crm-system-7149a.firebasestorage.app",
