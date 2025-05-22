@@ -32,3 +32,10 @@ git clone https://github.com/asrorhon04/smart-crm.git
 cd smart-crm
 npm install
 quasar dev
+
+👨‍💻 Автор
+Telegram: @Asrorkhon04
+
+LinkedIn: Асрорхон Арсланов
+
+GitHub: Asrorhon04
